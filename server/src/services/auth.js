@@ -1,6 +1,10 @@
 import { AuthError } from "../utils/error.js";
 
-export async function retrieveTokenUsingClientSecret(clientId, clientSecret, scopes) {
+export async function retrieveTokenUsingClientSecret(
+  clientId,
+  clientSecret,
+  scopes
+) {
   const body = {
     grant_type: "client_credentials",
     client_id: clientId,
@@ -27,7 +31,7 @@ export async function retrieveTokenUsingClientSecret(clientId, clientSecret, sco
       responseBody.errors[0].extensions.status
     );
   }
-  
+
   return responseBody;
 }
 
@@ -97,6 +101,6 @@ export async function retrieveTokenUsingRefreshToken(
       responseBody.errors[0].extensions.status
     );
   }
-  
+
   return responseBody;
 }
