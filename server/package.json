@@ -1,0 +1,23 @@
+{
+    "name": "stitch-sample-integration",
+    "version": "1.0.0",
+    "description": "Stitch API integration",
+    "main": "index.js",
+    "scripts": {
+        "serve": "node index.js"
+    },
+    "author": "kialanpillay@",
+    "type": "module",
+    "dependencies": {
+        "@koa/cors": "^4.0.0",
+        "crypto": "^1.0.1",
+        "dotenv": "^16.3.1",
+        "fs": "^0.0.1-security",
+        "http": "^0.0.1-security",
+        "jsonwebtoken": "^9.0.2",
+        "koa": "^2.14.2",
+        "koa-bodyparser": "^4.4.1",
+        "koa-router": "^12.0.0",
+        "node-fetch": "^3.3.2"
+    }
+}
